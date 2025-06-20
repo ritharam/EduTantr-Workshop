@@ -1,0 +1,55 @@
+.hero-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-background {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.8s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.z-1 {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+}
+
+.left-btn {
+  left: 20px;
+  margin-top: 82px; 
+}
+
+.right-btn {
+  right: 20px;
+  margin-top: 82px; 
+}
+
+.book-btn {
+  background-color: #ffc107 !important; 
+  border: none;
+  color: black;
+}
