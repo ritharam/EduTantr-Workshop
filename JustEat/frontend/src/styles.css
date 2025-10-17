@@ -1,0 +1,51 @@
+.hero-section {
+  background: url("https://source.unsplash.com/1600x600/?food,restaurant")
+    center/cover no-repeat;
+  color: white;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, #ff4d4d, #ff1a1a);
+}
+
+.signin-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.signin-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.signin-modal {
+  width: 320px;
+  margin: 2rem;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.signin-overlay.open .signin-modal {
+  transform: translateX(0);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
